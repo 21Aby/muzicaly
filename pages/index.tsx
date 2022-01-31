@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Sidebar from '../components/Sidebar'
+import Main from '../components/Main'
 
 export default function Home() {
   return (
@@ -8,7 +9,10 @@ export default function Home() {
         <title>Muzicaly</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Sidebar />
+      <main className="flex">
+        <Sidebar />
+        <Main />
+      </main>
     </div>
   )
 }
